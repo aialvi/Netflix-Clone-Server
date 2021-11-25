@@ -26,7 +26,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/movies", movieRoutes);
-pp.use("/api/lists", listRoute);
+app.use("/api/lists", listRoute);
 
 app.listen(8800, () => {
   console.log("Backend server is running");
